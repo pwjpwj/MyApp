@@ -18,6 +18,8 @@ shinyUI(fluidPage(
   # Box with yes or no variables
   sidebarLayout(
     sidebarPanel(
+       h3("Type the number of tablets per day 
+                 the patient takes for other diseases"),
        numericInput("numeric1","Number of tablets per day",
                    min = 1,
                    max = 50,
@@ -29,6 +31,8 @@ shinyUI(fluidPage(
     mainPanel(
       h3("Result of prediction"),
       textOutput("pred1")
+      
+     # http://rpubs.com/pwjpwj/470468
     )
   )
 ))
