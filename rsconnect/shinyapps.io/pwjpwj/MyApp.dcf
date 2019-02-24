@@ -5,8 +5,8 @@ account: pwjpwj
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 736311
-bundleId: 1895714
+bundleId: 1896635
 url: https://pwjpwj.shinyapps.io/MyApp/
-when: 1551006116.34613
+when: 1551043449.91772
 asMultiple: FALSE
 asStatic: FALSE

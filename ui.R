@@ -30,9 +30,9 @@ shinyUI(fluidPage(
     # Tells you the probability of being well controlled on vitK antagonist
     mainPanel(
       h3("Result of prediction"),
-      textOutput("pred1")
+      textOutput("pred1"),
       
-     # http://rpubs.com/pwjpwj/470468
+      helpText(a("Documentation", href="http://rpubs.com/pwjpwj/470468"))
     )
   )
 ))
