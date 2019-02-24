@@ -1,0 +1,45 @@
+MyAppPitch
+========================================================
+author: 
+date: 
+autosize: true
+
+My App to predict the control of anticoagulation with vit K antagonists
+========================================================
+Author: Philip Wikman
+Date 24/02/2018
+
+Version: Embryonic prototype
+
+
+The App
+========================================================
+
+You can find the App here: https://pwjpwj.shinyapps.io/MyApp/
+Basically it predicts if you will be well controled with vitamin K antagonists
+depending on the number of tablets you take every day for other diseases
+
+Just introduce the number of tablets in the box that you take per day and
+press submit
+
+Data used
+========================================================
+
+It uses data from a study done by my internal medicine department
+It was a retrospective cohort study of patients taking vitK antagonists
+due to a nonvalvular atrial fibrilation
+
+The model
+========================================================
+
+This was the model accuracy
+```{r}
+modFit1<-load(file="modFit1.R")
+print(modFit[4])
+```
+
+
+
+
+
+

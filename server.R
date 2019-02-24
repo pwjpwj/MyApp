@@ -15,8 +15,8 @@ shinyServer(function(input, output) {
   modFit1<-load(file="modFit1.R")
  
   predicted<-reactive({
-    Numero_Comp<-input$numeric1
-    predict(get(modFit1), newdata=Numero_Comp)
+    Numero_Comp_input<-input$numeric1
+    predict(get(modFit1), newdata=data.frame(Numero_Comp=Numero_Comp_input))
   })
 
   output$pred1<-renderPrint({
